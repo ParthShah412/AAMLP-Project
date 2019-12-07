@@ -38,6 +38,9 @@ This csv file will be used for training and testing model
 
 rf.ipynb or rf.py
 
+### ----------XGBoost Model----------
+xgboost_model.py
+
 ### ----------Lasso for Logistic regression.util----------
 
 lassocv_util.py: contain load data function and lasso feature selection 
