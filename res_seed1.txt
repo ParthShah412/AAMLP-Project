@@ -1,0 +1,275 @@
+Building and evaluating a model using dataset: merged_file_f.csv
+Dataset has 388 rows and 274 feature columns
+Index(['f_II__abs_energy', 'f_II__absolute_sum_of_changes', 'f_II__agg_autocorrelation__f_agg_mean__maxlag_40', 'f_II__agg_autocorrelation__f_agg_median__maxlag_40',
+       'f_II__agg_autocorrelation__f_agg_var__maxlag_40', 'f_II__ar_coefficient__k_10__coeff_0', 'f_II__ar_coefficient__k_10__coeff_1', 'f_II__ar_coefficient__k_10__coeff_2',
+       'f_II__ar_coefficient__k_10__coeff_3', 'f_II__ar_coefficient__k_10__coeff_4', 'f_II__autocorrelation__lag_0', 'f_II__autocorrelation__lag_1', 'f_II__autocorrelation__lag_2',
+       'f_II__autocorrelation__lag_3', 'f_II__autocorrelation__lag_4', 'f_II__autocorrelation__lag_5', 'f_II__autocorrelation__lag_6', 'f_II__autocorrelation__lag_7', 'f_II__autocorrelation__lag_8',
+       'f_II__autocorrelation__lag_9', 'f_HEART_RATE.COUNT', 'f_SYSBP.COUNT', 'f_SYSBP.MIN', 'f_DIASBP.COUNT', 'f_MEANBP.MIN'],
+      dtype='object')
+Index(['f_II__abs_energy', 'f_II__absolute_sum_of_changes', 'f_II__agg_autocorrelation__f_agg_mean__maxlag_40', 'f_II__agg_autocorrelation__f_agg_median__maxlag_40',
+       'f_II__agg_autocorrelation__f_agg_var__maxlag_40', 'f_II__ar_coefficient__k_10__coeff_0', 'f_II__ar_coefficient__k_10__coeff_1', 'f_II__ar_coefficient__k_10__coeff_2',
+       'f_II__ar_coefficient__k_10__coeff_3', 'f_II__ar_coefficient__k_10__coeff_4', 'f_II__autocorrelation__lag_0', 'f_II__autocorrelation__lag_1', 'f_II__autocorrelation__lag_2',
+       'f_II__autocorrelation__lag_3', 'f_II__autocorrelation__lag_4', 'f_II__autocorrelation__lag_5', 'f_II__autocorrelation__lag_6', 'f_II__autocorrelation__lag_7', 'f_II__autocorrelation__lag_8',
+       'f_II__autocorrelation__lag_9', 'f_HEART_RATE.COUNT', 'f_SYSBP.COUNT', 'f_SYSBP.MIN', 'f_DIASBP.COUNT', 'f_MEANBP.MIN'],
+      dtype='object')
+accuracy:  78.63  %
+              precision    recall  f1-score   support
+
+           0       0.37      0.35      0.36        20
+           1       0.87      0.88      0.87        97
+
+   micro avg       0.79      0.79      0.79       117
+   macro avg       0.62      0.61      0.62       117
+weighted avg       0.78      0.79      0.78       117
+
+[[ 7 13]
+ [12 85]]
+y_test: 
+t_VOLUMNE_RESPONSIVENESS    97
+dtype: int64
+117
+done printing y test
+Feature importances:
+Class 1 is considered the positive class by the classifier, class 0 negative
+best params
+{'C': 0.1}
+	f_PLETH__longest_strike_above_mean: -0.26912857841666726
+	f_V__large_standard_deviation__r_0.15000000000000002: 0.2544128612814123
+	f_V__max_langevin_fixed_point__m_3__r_30: 0.24211687227186254
+	f_V__large_standard_deviation__r_0.25: -0.22450201635065578
+	f_PLETH__large_standard_deviation__r_0.15000000000000002: -0.2216739700414453
+	f_MEANBP.MIN: -0.19608994231462912
+	f_SYSBP.MIN: -0.1924966330223366
+	f_V__longest_strike_below_mean: -0.18665048086124209
+	f_PLETH__linear_trend__attr_rvalue: -0.17802940946342807
+	f_SPO2.MAX: 0.17704120609194465
+	f_RACE_BLACK: 0.17639273599719146
+	f_V__agg_autocorrelation__f_agg_median__maxlag_40: 0.17460986259917793
+	f_V__absolute_sum_of_changes: -0.16907832832286238
+	f_V__large_standard_deviation__r_0.30000000000000004: -0.16333966783324877
+	f_V__large_standard_deviation__r_0.35000000000000003: -0.16330155576141978
+	f_MEANBP.25.: -0.15976318511986143
+	f_V__linear_trend__attr_pvalue: -0.15911282105938143
+	f_V__binned_entropy__max_bins_10: 0.15644588044882538
+	f_V__large_standard_deviation__r_0.2: 0.15398323841041278
+	f_V__ar_coefficient__k_10__coeff_3: 0.1319732439601264
+	f_V__agg_autocorrelation__f_agg_var__maxlag_40: -0.12874182290855707
+	f_V__linear_trend__attr_slope: 0.12789870208161402
+	f_V__agg_autocorrelation__f_agg_mean__maxlag_40: 0.12640428436507964
+	f_SYSBP.25.: -0.1245660782693787
+	f_V__fft_aggregated__aggtype_kurtosis: -0.12353769120438145
+	f_V__ar_coefficient__k_10__coeff_0: -0.1179992189478779
+	f_MEANBP: -0.11685686032688693
+	f_V__ar_coefficient__k_10__coeff_2: -0.1167342049275774
+	f_DIASBP.MAX: 0.11438688440494432
+	f_SYSBP.COUNT: 0.11353966679589292
+AUC: 0.74948
+Done Printing LR
+
+accuracy:  84.62  %
+              precision    recall  f1-score   support
+
+           0       0.57      0.40      0.47        20
+           1       0.88      0.94      0.91        97
+
+   micro avg       0.85      0.85      0.85       117
+   macro avg       0.73      0.67      0.69       117
+weighted avg       0.83      0.85      0.83       117
+
+[[ 8 12]
+ [ 6 91]]
+y_test: 
+t_VOLUMNE_RESPONSIVENESS    97
+dtype: int64
+117
+done printing y test
+Feature importances:
+Class 1 is considered the positive class by the classifier, class 0 negative
+best params
+{'C': 1}
+	f_DIASBP.COUNT: 0.7887052770912589
+	f_SYSBP.COUNT: 0.7887052770912589
+	f_HEART_RATE.COUNT: 0.7887052770912589
+	f_MEANBP.MIN: -0.6053083003329953
+	f_SYSBP.MIN: -0.4208869026801119
+	f_II__abs_energy: -0.0050002102818352875
+	f_II__ar_coefficient__k_10__coeff_1: 0.0050001241510963645
+	f_II__autocorrelation__lag_5: -0.004999794818296899
+	f_II__ar_coefficient__k_10__coeff_4: -0.004999750391207843
+	f_II__autocorrelation__lag_3: 0.004999748001462661
+	f_II__agg_autocorrelation__f_agg_median__maxlag_40: -0.004999739632126839
+	f_II__agg_autocorrelation__f_agg_var__maxlag_40: -0.004999732535047806
+	f_II__autocorrelation__lag_4: -0.00499971344423412
+	f_II__autocorrelation__lag_9: -0.004999710852182785
+	f_II__ar_coefficient__k_10__coeff_0: 0.004999708849389382
+	f_II__autocorrelation__lag_7: -0.004999702578801838
+	f_II__autocorrelation__lag_2: -0.004999696153067282
+	f_II__autocorrelation__lag_6: -0.004999685374796082
+	f_II__ar_coefficient__k_10__coeff_3: -0.0049996762230796864
+	f_II__agg_autocorrelation__f_agg_mean__maxlag_40: -0.004999667328237119
+	f_II__autocorrelation__lag_8: -0.004999661194104095
+	f_II__ar_coefficient__k_10__coeff_2: 0.004999598863064482
+	f_II__autocorrelation__lag_1: -0.0049995945833458694
+	f_II__absolute_sum_of_changes: 0.0049855946767758735
+	f_II__autocorrelation__lag_0: 0.0
+AUC: 0.89021
+Done Printing LassoCV LR
+
+accuracy:  84.62  %
+              precision    recall  f1-score   support
+
+           0       0.57      0.40      0.47        20
+           1       0.88      0.94      0.91        97
+
+   micro avg       0.85      0.85      0.85       117
+   macro avg       0.73      0.67      0.69       117
+weighted avg       0.83      0.85      0.83       117
+
+[[ 8 12]
+ [ 6 91]]
+y_test: 
+t_VOLUMNE_RESPONSIVENESS    97
+dtype: int64
+117
+done printing y test
+Feature importances:
+Class 1 is considered the positive class by the classifier, class 0 negative
+best params
+{'C': 1}
+	f_DIASBP.COUNT: 0.7887052770912589
+	f_SYSBP.COUNT: 0.7887052770912589
+	f_HEART_RATE.COUNT: 0.7887052770912589
+	f_MEANBP.MIN: -0.6053083003329953
+	f_SYSBP.MIN: -0.4208869026801119
+	f_II__abs_energy: -0.0050002102818352875
+	f_II__ar_coefficient__k_10__coeff_1: 0.0050001241510963645
+	f_II__autocorrelation__lag_5: -0.004999794818296899
+	f_II__ar_coefficient__k_10__coeff_4: -0.004999750391207843
+	f_II__autocorrelation__lag_3: 0.004999748001462661
+	f_II__agg_autocorrelation__f_agg_median__maxlag_40: -0.004999739632126839
+	f_II__agg_autocorrelation__f_agg_var__maxlag_40: -0.004999732535047806
+	f_II__autocorrelation__lag_4: -0.00499971344423412
+	f_II__autocorrelation__lag_9: -0.004999710852182785
+	f_II__ar_coefficient__k_10__coeff_0: 0.004999708849389382
+	f_II__autocorrelation__lag_7: -0.004999702578801838
+	f_II__autocorrelation__lag_2: -0.004999696153067282
+	f_II__autocorrelation__lag_6: -0.004999685374796082
+	f_II__ar_coefficient__k_10__coeff_3: -0.0049996762230796864
+	f_II__agg_autocorrelation__f_agg_mean__maxlag_40: -0.004999667328237119
+	f_II__autocorrelation__lag_8: -0.004999661194104095
+	f_II__ar_coefficient__k_10__coeff_2: 0.004999598863064482
+	f_II__autocorrelation__lag_1: -0.0049995945833458694
+	f_II__absolute_sum_of_changes: 0.0049855946767758735
+	f_II__autocorrelation__lag_0: 0.0
+AUC: 0.89021
+Done Printing RidgeCV LR
+
+accuracy:  84.62  %
+              precision    recall  f1-score   support
+
+           0       1.00      0.10      0.18        20
+           1       0.84      1.00      0.92        97
+
+   micro avg       0.85      0.85      0.85       117
+   macro avg       0.92      0.55      0.55       117
+weighted avg       0.87      0.85      0.79       117
+
+[[ 2 18]
+ [ 0 97]]
+y_test: 
+t_VOLUMNE_RESPONSIVENESS    97
+dtype: int64
+117
+done printing y test
+Feature importances:
+Class 1 is considered the positive class by the classifier, class 0 negative
+best params
+{'fit_intercept': True, 'C': 0.01, 'penalty': 'l1', 'max_iter': 1000}
+	f_MEANBP.MIN: -0.08698431464969751
+	f_SYSBP.MIN: -0.07842161341284094
+	f_RESPRATE.COUNT: 0.012565916854512643
+	f_MEANBP.COUNT: 1.1028260217707222e-06
+	f_PLETH__fft_aggregated__aggtype_centroid: 0.0
+	f_PLETH__fft_aggregated__aggtype_kurtosis: 0.0
+	f_PLETH__count_below_mean: 0.0
+	f_PLETH__count_above_mean: 0.0
+	f_PLETH__binned_entropy__max_bins_10: 0.0
+	f_PLETH__autocorrelation__lag_1: 0.0
+	f_PLETH__autocorrelation__lag_8: 0.0
+	f_PLETH__autocorrelation__lag_7: 0.0
+	f_PLETH__autocorrelation__lag_6: 0.0
+	f_PLETH__fft_aggregated__aggtype_skew: 0.0
+	f_PLETH__autocorrelation__lag_5: 0.0
+	f_PLETH__autocorrelation__lag_4: 0.0
+	f_PLETH__autocorrelation__lag_3: 0.0
+	f_PLETH__autocorrelation__lag_2: 0.0
+	f_PLETH__autocorrelation__lag_9: 0.0
+	f_SPO2.MAX: 0.0
+	f_PLETH__first_location_of_maximum: 0.0
+	f_PLETH__agg_autocorrelation__f_agg_mean__maxlag_40: 0.0
+	f_II__quantile__q_0.9: 0.0
+	f_II__skewness: 0.0
+	f_II__standard_deviation: 0.0
+	f_II__variance: 0.0
+	f_PLETH__abs_energy: 0.0
+	f_PLETH__absolute_sum_of_changes: 0.0
+	f_PLETH__agg_autocorrelation__f_agg_median__maxlag_40: 0.0
+	f_PLETH__autocorrelation__lag_0: 0.0
+AUC: 0.55
+Done Printing LSVC
+
+accuracy:  82.91  %
+              precision    recall  f1-score   support
+
+           0       0.50      0.25      0.33        20
+           1       0.86      0.95      0.90        97
+
+   micro avg       0.83      0.83      0.83       117
+   macro avg       0.68      0.60      0.62       117
+weighted avg       0.80      0.83      0.80       117
+
+[[ 5 15]
+ [ 5 92]]
+y_test: 
+t_VOLUMNE_RESPONSIVENESS    97
+dtype: int64
+117
+done printing y test
+Feature importances:
+Class 1 is considered the positive class by the classifier, class 0 negative
+best params
+{'coef0': 3.0500000000000003, 'decision_function_shape': 'ovo', 'kernel': 'rbf', 'C': 10, 'degree': 1, 'gamma': 0.01}
+	f_V__large_standard_deviation__r_0.05: 10.0
+	f_II__large_standard_deviation__r_0.5: -10.0
+	f_II__large_standard_deviation__r_0.25: -10.0
+	f_PLETH__first_location_of_minimum: 8.45605274275058
+	f_II__quantile__q_0.7: 5.751846046004642
+	f_II__agg_autocorrelation__f_agg_var__maxlag_40: -5.716144132479886
+	f_V__binned_entropy__max_bins_10: 5.084513773419766
+	f_PLETH__large_standard_deviation__r_0.30000000000000004: 4.8547762872740545
+	f_II__large_standard_deviation__r_0.1: -4.479705709495313
+	f_II__large_standard_deviation__r_0.75: -4.336532168583378
+	f_II__large_standard_deviation__r_0.35000000000000003: -4.135397825419291
+	f_II__fft_aggregated__aggtype_variance: -3.8519817166070855
+	f_V__agg_autocorrelation__f_agg_mean__maxlag_40: 3.39197397891181
+	f_II__large_standard_deviation__r_0.8500000000000001: -3.380787594462396
+	f_II__first_location_of_maximum: -3.3234496702149414
+	f_II__ar_coefficient__k_10__coeff_2: -3.0368128525356077
+	f_II__autocorrelation__lag_3: -2.921517961509197
+	f_II__agg_autocorrelation__f_agg_median__maxlag_40: -2.808518642568452
+	f_II__large_standard_deviation__r_0.8: -2.550035545781417
+	f_II__large_standard_deviation__r_0.65: -2.4911228292793215
+	f_II__large_standard_deviation__r_0.45: -2.4669632283083915
+	f_II__length: -2.3900688591935064
+	f_II__fft_aggregated__aggtype_kurtosis: -2.3790519720693832
+	f_V__fft_aggregated__aggtype_skew: 2.3344207782052844
+	f_II__first_location_of_minimum: -2.3322837892992534
+	f_V__large_standard_deviation__r_0.8: 2.3217066276604825
+	f_V__ar_coefficient__k_10__coeff_0: 2.3147368519776284
+	f_II__large_standard_deviation__r_0.05: -2.295271458813511
+	f_V__kurtosis: 2.2827986497246204
+	f_II__linear_trend__attr_intercept: -2.2434322925277366
+AUC: 0.59923
+Done Printing SVC
+
+1575653232.574838

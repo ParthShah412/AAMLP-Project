@@ -1,0 +1,285 @@
+Building and evaluating a model using dataset: merged_file_f.csv
+Dataset has 388 rows and 274 feature columns
+Index(['f_II__abs_energy', 'f_II__absolute_sum_of_changes', 'f_II__agg_autocorrelation__f_agg_mean__maxlag_40', 'f_II__agg_autocorrelation__f_agg_median__maxlag_40',
+       'f_II__agg_autocorrelation__f_agg_var__maxlag_40', 'f_II__ar_coefficient__k_10__coeff_0', 'f_II__ar_coefficient__k_10__coeff_1', 'f_II__ar_coefficient__k_10__coeff_2',
+       'f_II__ar_coefficient__k_10__coeff_3', 'f_II__ar_coefficient__k_10__coeff_4',
+       ...
+       'f_RESPRATE.50.', 'f_RESPRATE.75.', 'f_RESPRATE.MAX', 'f_SPO2.COUNT', 'f_SPO2.MEAN', 'f_SPO2.MIN', 'f_SPO2.25.', 'f_SPO2.50.', 'f_SPO2.75.', 'f_SPO2.MAX'],
+      dtype='object', length=274)
+Index(['f_II__abs_energy', 'f_II__absolute_sum_of_changes', 'f_II__agg_autocorrelation__f_agg_mean__maxlag_40', 'f_II__agg_autocorrelation__f_agg_median__maxlag_40',
+       'f_II__agg_autocorrelation__f_agg_var__maxlag_40', 'f_II__ar_coefficient__k_10__coeff_0', 'f_II__ar_coefficient__k_10__coeff_1', 'f_II__ar_coefficient__k_10__coeff_2',
+       'f_II__ar_coefficient__k_10__coeff_3', 'f_II__ar_coefficient__k_10__coeff_4',
+       ...
+       'f_RESPRATE.50.', 'f_RESPRATE.75.', 'f_RESPRATE.MAX', 'f_SPO2.COUNT', 'f_SPO2.MEAN', 'f_SPO2.MIN', 'f_SPO2.25.', 'f_SPO2.50.', 'f_SPO2.75.', 'f_SPO2.MAX'],
+      dtype='object', length=274)
+accuracy:  77.78  %
+              precision    recall  f1-score   support
+
+           0       0.42      0.35      0.38        23
+           1       0.85      0.88      0.86        94
+
+   micro avg       0.78      0.78      0.78       117
+   macro avg       0.63      0.62      0.62       117
+weighted avg       0.76      0.78      0.77       117
+
+[[ 8 15]
+ [11 83]]
+y_test: 
+t_VOLUMNE_RESPONSIVENESS    94
+dtype: int64
+117
+done printing y test
+Feature importances:
+Class 1 is considered the positive class by the classifier, class 0 negative
+best params
+{'C': 0.1}
+	f_V__first_location_of_minimum: 0.291635972388272
+	f_SYSBP.MIN: -0.24782328561159203
+	f_RACE_WHITE: 0.2405934101842313
+	f_V__variance: -0.22924795255091296
+	f_V__max_langevin_fixed_point__m_3__r_30: 0.2103722145647909
+	f_PLETH__large_standard_deviation__r_0.2: 0.20663093433914675
+	f_V__ar_coefficient__k_10__coeff_2: -0.20593746289602768
+	f_V__ar_coefficient__k_10__coeff_3: 0.19242563329829926
+	f_MEANBP.MIN: -0.18937080021109637
+	f_V__agg_autocorrelation__f_agg_var__maxlag_40: -0.1727196725733691
+	f_V__large_standard_deviation__r_0.15000000000000002: 0.16798073762926327
+	f_V__agg_autocorrelation__f_agg_median__maxlag_40: 0.16472339903199884
+	f_V__agg_autocorrelation__f_agg_mean__maxlag_40: 0.14689396869651591
+	f_SYSBP.25.: -0.14512768339653606
+	f_V__linear_trend__attr_pvalue: -0.1317242122496482
+	f_V__linear_trend__attr_slope: 0.1312091278792659
+	f_MEANBP.25.: -0.1284864163613938
+	f_PLETH__fft_aggregated__aggtype_variance: 0.12784579711448094
+	f_SPO2.MAX: 0.1241286600016781
+	f_V__fft_aggregated__aggtype_variance: -0.1220990030992243
+	f_PLETH__variance: -0.12128850091610516
+	f_V__binned_entropy__max_bins_10: 0.11592038013878449
+	f_V__linear_trend__attr_stderr: -0.11438706746558455
+	f_V__length: -0.11043829175804708
+	f_V__minimum: -0.108671631778499
+	f_DIASBP.MIN: -0.10798806615681181
+	f_PLETH__linear_trend__attr_rvalue: -0.10732012418655683
+	f_V__kurtosis: -0.10656381263246223
+	f_METASTATIC_CANCER: -0.10632648226044052
+	f_V__ar_coefficient__k_10__coeff_1: 0.10480230600586143
+AUC: 0.80481
+Done Printing LR
+
+accuracy:  77.78  %
+              precision    recall  f1-score   support
+
+           0       0.42      0.35      0.38        23
+           1       0.85      0.88      0.86        94
+
+   micro avg       0.78      0.78      0.78       117
+   macro avg       0.63      0.62      0.62       117
+weighted avg       0.76      0.78      0.77       117
+
+[[ 8 15]
+ [11 83]]
+y_test: 
+t_VOLUMNE_RESPONSIVENESS    94
+dtype: int64
+117
+done printing y test
+Feature importances:
+Class 1 is considered the positive class by the classifier, class 0 negative
+best params
+{'C': 0.1}
+	f_V__first_location_of_minimum: 0.291635972388272
+	f_SYSBP.MIN: -0.24782328561159203
+	f_RACE_WHITE: 0.2405934101842313
+	f_V__variance: -0.22924795255091296
+	f_V__max_langevin_fixed_point__m_3__r_30: 0.2103722145647909
+	f_PLETH__large_standard_deviation__r_0.2: 0.20663093433914675
+	f_V__ar_coefficient__k_10__coeff_2: -0.20593746289602768
+	f_V__ar_coefficient__k_10__coeff_3: 0.19242563329829926
+	f_MEANBP.MIN: -0.18937080021109637
+	f_V__agg_autocorrelation__f_agg_var__maxlag_40: -0.1727196725733691
+	f_V__large_standard_deviation__r_0.15000000000000002: 0.16798073762926327
+	f_V__agg_autocorrelation__f_agg_median__maxlag_40: 0.16472339903199884
+	f_V__agg_autocorrelation__f_agg_mean__maxlag_40: 0.14689396869651591
+	f_SYSBP.25.: -0.14512768339653606
+	f_V__linear_trend__attr_pvalue: -0.1317242122496482
+	f_V__linear_trend__attr_slope: 0.1312091278792659
+	f_MEANBP.25.: -0.1284864163613938
+	f_PLETH__fft_aggregated__aggtype_variance: 0.12784579711448094
+	f_SPO2.MAX: 0.1241286600016781
+	f_V__fft_aggregated__aggtype_variance: -0.1220990030992243
+	f_PLETH__variance: -0.12128850091610516
+	f_V__binned_entropy__max_bins_10: 0.11592038013878449
+	f_V__linear_trend__attr_stderr: -0.11438706746558455
+	f_V__length: -0.11043829175804708
+	f_V__minimum: -0.108671631778499
+	f_DIASBP.MIN: -0.10798806615681181
+	f_PLETH__linear_trend__attr_rvalue: -0.10732012418655683
+	f_V__kurtosis: -0.10656381263246223
+	f_METASTATIC_CANCER: -0.10632648226044052
+	f_V__ar_coefficient__k_10__coeff_1: 0.10480230600586143
+AUC: 0.80481
+Done Printing LassoCV LR
+
+accuracy:  77.78  %
+              precision    recall  f1-score   support
+
+           0       0.42      0.35      0.38        23
+           1       0.85      0.88      0.86        94
+
+   micro avg       0.78      0.78      0.78       117
+   macro avg       0.63      0.62      0.62       117
+weighted avg       0.76      0.78      0.77       117
+
+[[ 8 15]
+ [11 83]]
+y_test: 
+t_VOLUMNE_RESPONSIVENESS    94
+dtype: int64
+117
+done printing y test
+Feature importances:
+Class 1 is considered the positive class by the classifier, class 0 negative
+best params
+{'C': 0.1}
+	f_V__first_location_of_minimum: 0.291635972388272
+	f_SYSBP.MIN: -0.24782328561159203
+	f_RACE_WHITE: 0.2405934101842313
+	f_V__variance: -0.22924795255091296
+	f_V__max_langevin_fixed_point__m_3__r_30: 0.2103722145647909
+	f_PLETH__large_standard_deviation__r_0.2: 0.20663093433914675
+	f_V__ar_coefficient__k_10__coeff_2: -0.20593746289602768
+	f_V__ar_coefficient__k_10__coeff_3: 0.19242563329829926
+	f_MEANBP.MIN: -0.18937080021109637
+	f_V__agg_autocorrelation__f_agg_var__maxlag_40: -0.1727196725733691
+	f_V__large_standard_deviation__r_0.15000000000000002: 0.16798073762926327
+	f_V__agg_autocorrelation__f_agg_median__maxlag_40: 0.16472339903199884
+	f_V__agg_autocorrelation__f_agg_mean__maxlag_40: 0.14689396869651591
+	f_SYSBP.25.: -0.14512768339653606
+	f_V__linear_trend__attr_pvalue: -0.1317242122496482
+	f_V__linear_trend__attr_slope: 0.1312091278792659
+	f_MEANBP.25.: -0.1284864163613938
+	f_PLETH__fft_aggregated__aggtype_variance: 0.12784579711448094
+	f_SPO2.MAX: 0.1241286600016781
+	f_V__fft_aggregated__aggtype_variance: -0.1220990030992243
+	f_PLETH__variance: -0.12128850091610516
+	f_V__binned_entropy__max_bins_10: 0.11592038013878449
+	f_V__linear_trend__attr_stderr: -0.11438706746558455
+	f_V__length: -0.11043829175804708
+	f_V__minimum: -0.108671631778499
+	f_DIASBP.MIN: -0.10798806615681181
+	f_PLETH__linear_trend__attr_rvalue: -0.10732012418655683
+	f_V__kurtosis: -0.10656381263246223
+	f_METASTATIC_CANCER: -0.10632648226044052
+	f_V__ar_coefficient__k_10__coeff_1: 0.10480230600586143
+AUC: 0.80481
+Done Printing RidgeCV LR
+
+accuracy:  80.34  %
+              precision    recall  f1-score   support
+
+           0       0.50      0.04      0.08        23
+           1       0.81      0.99      0.89        94
+
+   micro avg       0.80      0.80      0.80       117
+   macro avg       0.65      0.52      0.48       117
+weighted avg       0.75      0.80      0.73       117
+
+[[ 1 22]
+ [ 1 93]]
+y_test: 
+t_VOLUMNE_RESPONSIVENESS    94
+dtype: int64
+117
+done printing y test
+Feature importances:
+Class 1 is considered the positive class by the classifier, class 0 negative
+best params
+{'penalty': 'l1', 'max_iter': 1000, 'fit_intercept': True, 'C': 0.01}
+	f_SYSBP.MIN: -0.08991797247446406
+	f_MEANBP.MIN: -0.08237460738407021
+	f_PLETH__autocorrelation__lag_9: 0.0
+	f_PLETH__autocorrelation__lag_3: 0.0
+	f_PLETH__autocorrelation__lag_4: 0.0
+	f_PLETH__autocorrelation__lag_5: 0.0
+	f_PLETH__autocorrelation__lag_6: 0.0
+	f_PLETH__autocorrelation__lag_7: 0.0
+	f_PLETH__autocorrelation__lag_8: 0.0
+	f_PLETH__binned_entropy__max_bins_10: 0.0
+	f_PLETH__first_location_of_minimum: 0.0
+	f_PLETH__count_above_mean: 0.0
+	f_PLETH__count_below_mean: 0.0
+	f_PLETH__fft_aggregated__aggtype_centroid: 0.0
+	f_PLETH__fft_aggregated__aggtype_kurtosis: 0.0
+	f_PLETH__fft_aggregated__aggtype_skew: 0.0
+	f_PLETH__fft_aggregated__aggtype_variance: 0.0
+	f_PLETH__autocorrelation__lag_2: 0.0
+	f_SPO2.MAX: 0.0
+	f_PLETH__autocorrelation__lag_1: 0.0
+	f_PLETH__agg_autocorrelation__f_agg_mean__maxlag_40: 0.0
+	f_II__quantile__q_0.9: 0.0
+	f_II__skewness: 0.0
+	f_II__standard_deviation: 0.0
+	f_II__variance: 0.0
+	f_PLETH__abs_energy: 0.0
+	f_PLETH__absolute_sum_of_changes: 0.0
+	f_PLETH__agg_autocorrelation__f_agg_median__maxlag_40: 0.0
+	f_PLETH__autocorrelation__lag_0: 0.0
+	f_PLETH__agg_autocorrelation__f_agg_var__maxlag_40: 0.0
+AUC: 0.51642
+Done Printing LSVC
+
+accuracy:  79.49  %
+              precision    recall  f1-score   support
+
+           0       0.40      0.09      0.14        23
+           1       0.81      0.97      0.88        94
+
+   micro avg       0.79      0.79      0.79       117
+   macro avg       0.61      0.53      0.51       117
+weighted avg       0.73      0.79      0.74       117
+
+[[ 2 21]
+ [ 3 91]]
+y_test: 
+t_VOLUMNE_RESPONSIVENESS    94
+dtype: int64
+117
+done printing y test
+Feature importances:
+Class 1 is considered the positive class by the classifier, class 0 negative
+best params
+{'kernel': 'sigmoid', 'coef0': 2.15, 'decision_function_shape': 'ovr', 'C': 0.1, 'gamma': 100, 'degree': 5}
+	f_PLETH__fft_aggregated__aggtype_kurtosis: 0.1
+	f_II__fft_aggregated__aggtype_kurtosis: -0.1
+	f_II__fft_aggregated__aggtype_variance: -0.1
+	f_II__first_location_of_maximum: -0.1
+	f_II__first_location_of_minimum: -0.1
+	f_II__kurtosis: -0.1
+	f_II__large_standard_deviation__r_0.05: -0.1
+	f_II__large_standard_deviation__r_0.1: -0.1
+	f_II__large_standard_deviation__r_0.15000000000000002: -0.1
+	f_II__large_standard_deviation__r_0.2: -0.1
+	f_II__large_standard_deviation__r_0.25: -0.1
+	f_II__large_standard_deviation__r_0.30000000000000004: -0.1
+	f_II__large_standard_deviation__r_0.35000000000000003: -0.1
+	f_II__large_standard_deviation__r_0.4: -0.1
+	f_II__large_standard_deviation__r_0.45: -0.1
+	f_II__large_standard_deviation__r_0.5: -0.1
+	f_II__large_standard_deviation__r_0.55: -0.1
+	f_II__large_standard_deviation__r_0.6000000000000001: -0.1
+	f_II__large_standard_deviation__r_0.65: -0.1
+	f_II__large_standard_deviation__r_0.7000000000000001: -0.1
+	f_II__large_standard_deviation__r_0.75: -0.1
+	f_II__large_standard_deviation__r_0.8: -0.1
+	f_II__large_standard_deviation__r_0.8500000000000001: -0.1
+	f_II__fft_aggregated__aggtype_skew: -0.1
+	f_II__fft_aggregated__aggtype_centroid: -0.1
+	f_PLETH__fft_aggregated__aggtype_centroid: 0.1
+	f_II__count_below_mean: -0.1
+	f_II__absolute_sum_of_changes: -0.1
+	f_II__agg_autocorrelation__f_agg_mean__maxlag_40: -0.1
+	f_II__agg_autocorrelation__f_agg_median__maxlag_40: -0.1
+AUC: 0.52752
+Done Printing SVC
+
+1575610417.449509
